@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🩸Blood Donation</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: rgb(227, 188, 188);">
+  <img src="01.jpeg" alt="" id="image"> <br>
+  <img src="02.jpeg" alt="" id="image">
+  <div class="container  ">
+    <br>
+    <h1 class="text-center">User Record Lists</h1>
+
+    <br>
+    <form onsubmit="return validate()">
+      <label for="names">User Name</label> <br><br>
+      <input type="text" name="" id="uname" class="form-control" placeholder="Enter your username" /> <br>
+      <span id="user_error"></span>
+
+      <br>
+
+      <label for="email">Email Address</label> <br> <br>
+      <input type="email" name="" id="email" class="form-control" placeholder="Enter your email"> <br>
+      <span id="email_error"></span>
+
+      <br>
+
+      <!--**** SELECT GROUP ADDING ****-->
+      <p>Select your blood group</p>
+
+      <br>
+
+      <select name="blood groups" class="select">
+        <option>A+</option>
+        <option>A-</option>
+        <option>B+</option>
+        <option>B-</option>
+        <option>O+</option>
+        <option>O-</option>
+        <option>AB+</option>
+        <option>AB-</option>
+      </select>
+      <br>
+      <br>
+
+      <!--******TEXTAREA******-->
+      <p>Enter your address</p><br>
+      <textarea name="" id="other_messages" class="form-control" rows="3"></textarea>
+      <span id="msg_error"></span>
+
+      <br>
+
+      <label for="phone">Enter your phone number</label> <br> <br>
+      <input type="tel" name="" id="number" class="form-control"> <br>
+      <span id="number_error"></span>
+
+      <br>
+
+      <!--******TEXTAREA******-->
+      <p>Any other details regardig your medical health</p> <br>
+      <textarea name="" id="messages" class="form-control" rows="3"></textarea> <br>
+      <span id="messsage_error"></span>
+
+      <br>
+
+      <!--******BUTTON*****-->
+      <button id="button " type="submit" style="font-size: 20px;
+        border-radius: 15px; 
+        padding: 5px;
+        background-color: lightseagreen;
+        color: white;
+        font-weight: bolder;"> Submit</button>
+
+
+    </form>
+  </div>
+  <!--*****JAVASCRIPT*****-->
+  <script src="script.js"></script>
+</body>
+
+</html>
